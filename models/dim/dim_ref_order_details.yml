@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: dim_ref_order_details
+    description: Refinery Orders Details
+    columns: 
+      - name: ORDERID
+        tests:
+          - not_null
+    columns: 
+      - name: DISTRIBUTION_CHANNEL
+        tests:
+          - not_null      

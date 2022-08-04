@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: dim_refinery
+    columns: 
+      - name: REF_ID
+        tests:
+          - unique
+          - not_null

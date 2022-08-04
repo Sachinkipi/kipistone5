@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: fact_warehouse_demand_supply
+    description: Warehouse Demand Supply Details
+    columns: 
+      - name: WH_DEMAND_ID
+        tests:
+          - unique
+          - not_null
+    columns: 
+      - name: WAREHOUSE_ID
+        tests:
+          - not_null
+    columns: 
+      - name: YEAR
+        tests:
+          - not_null
+    columns: 
+      - name: REQ_QUANTITY_MT
+        tests:
+          - not_null
+    columns: 
+      - name: SUPPLIED_QUANTITY_MT
+        tests:
+          - not_null
+    

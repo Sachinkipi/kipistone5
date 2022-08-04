@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: fact_wastage
+    description: Wastage Details
+    columns: 
+      - name: WASTAGE_ID
+        tests:
+          - unique
+          - not_null
+    columns: 
+      - name: WAREHOUSE_ID
+        tests:
+          - not_null
+    columns: 
+      - name: REPORT_NUMBER
+        tests:
+          - not_null
+    columns: 
+      - name: NET_LOSS_BARRELS
+        tests:
+          - not_null
+    columns: 
+      - name: LOSS
+        tests:
+          - not_null

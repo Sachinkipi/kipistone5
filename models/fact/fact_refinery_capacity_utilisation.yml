@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: fact_refinery_capacity_utilisation
+    description: Refinery Capacity Utilisation Details
+    columns: 
+      - name: REF_CAP_ID
+        tests:
+          - unique
+          - not_null
+    columns: 
+      - name: REF_ID
+        tests:
+          - not_null
+    columns: 
+      - name: YEAR
+        tests:
+          - not_null 
+    columns: 
+      - name: PHYSICAL_CRUDE_THROUGHPUT
+        tests:
+          - not_null  
+    columns: 
+      - name: CRUDE_OIL_STORAGE_CAPACITY_MMT
+        tests:
+          - not_null 
+    columns: 
+      - name: CAPACITY_UTILISATION
+        tests:
+          - not_null        

@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: dim_location
+    description: Location Details of Refinery, Warehouse and Petrol Pump
+    columns: 
+      - name: LOCATION_ID
+        tests:
+          - not_null
+    columns: 
+      - name: CITY
+        tests:
+          - not_null
+    columns: 
+      - name: STATE
+        tests:
+          - not_null
+    columns: 
+      - name: LATITUDE
+        tests:
+          - not_null
+    columns: 
+      - name: LONGITUDE
+        tests:
+          - not_null                        

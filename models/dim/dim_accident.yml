@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: dim_accident
+    description: Accident Details 
+    columns: 
+      - name: REPORT_NUMBER
+        tests:
+          - unique        
+    columns: 
+      - name: WAREHOUSE_ID
+        tests:
+          - not_null
+    columns: 
+      - name: ACCIDENT_DATE_TIME
+        tests:
+          - unique 
+    columns: 
+      - name: ACCIDENT_YEAR  
+        tests:
+          - not_null 
+    columns: 
+      - name: LIQUID_TYPE
+        tests:
+          - unique
+    columns: 
+      - name: LIQUID_SUBTYPE
+        tests:
+          - not_null
+    columns: 
+      - name: REPORT_NUMBER
+        tests:
+          - unique 
+                               

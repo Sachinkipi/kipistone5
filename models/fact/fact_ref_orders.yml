@@ -1,0 +1,42 @@
+version: 2
+
+models:
+  - name: fact_ref_orders
+    description: Refinery Orders Details
+    columns: 
+      - name: UNQ_ORDER_ID
+        tests:
+          - unique
+          - not_null
+    columns: 
+      - name: ORDERID
+        tests:
+          - not_null 
+    columns: 
+      - name: REF_ID
+        tests:
+          - not_null
+    columns: 
+      - name: WAREHOUSE_ID
+        tests:
+          - not_null 
+    columns: 
+      - name: DAYS_FOR_SHIPMENT_ETA
+        tests:
+          - not_null  
+    columns: 
+      - name: DAYS_FOR_SHIPMENT_ACTUAL
+        tests:
+          - not_null
+    columns: 
+      - name: QUANTITY
+        tests:
+          - not_null 
+    columns: 
+      - name: REQUESTED_QUANTITY
+        tests:
+          - not_null 
+    columns: 
+      - name: DELIVERY_STATUS
+        tests:
+          - not_null                              

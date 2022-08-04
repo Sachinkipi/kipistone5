@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: dim_br_petrol_consumption_statewise
+    description: Petrol Consumption Details of Statewise 
+    columns: 
+      - name: YEAR
+        tests:
+          - not_null
+    columns: 
+      - name: STATE
+        tests:
+          - not_null
+    columns: 
+      - name: WAREHOUSE_ID
+        tests:
+          - not_null 
+                  

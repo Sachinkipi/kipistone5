@@ -1,0 +1,46 @@
+version: 2
+
+models:
+  - name: dim_petrol_pump
+    description: Petrol Pump Details
+    columns: 
+      - name: PETROL_PUMP_ID
+        tests:
+          - not_null
+          - unique
+    columns: 
+      - name: LOCATION_ID
+        tests:
+          - not_null
+    columns: 
+      - name: WAREHOUSE_ID
+        tests:
+          - not_null
+    columns: 
+      - name: OWNER_NAME
+        tests:
+          - not_null
+    columns: 
+      - name: OWNER_NAME
+        tests:
+          - not_null        
+    columns: 
+      - name: EMAIL
+        tests:
+          - not_null 
+    columns: 
+      - name: PHONE_NUMBER
+        tests:
+          - not_null 
+    columns: 
+      - name: PINCODE
+        tests:
+          - not_null 
+    columns: 
+      - name: GENDER
+        tests:
+          - not_null 
+          - accepted value:
+             value:
+              - M
+              - F

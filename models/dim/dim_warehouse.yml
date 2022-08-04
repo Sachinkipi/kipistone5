@@ -1,0 +1,43 @@
+version: 2
+
+models:
+  - name: dim_warehouse
+    description: Warehouse Details
+    columns: 
+      - name: REF_ID
+        tests:
+          - not_null
+    columns: 
+      - name: WAREHOUSE_ID
+        tests:
+          - unique
+          - not_null 
+    columns: 
+      - name: LOCATION_ID
+        tests:
+          - unique
+          - not_null  
+    columns: 
+      - name: CURRENT_STORAGE_MT
+        tests:
+          - unique
+          - not_null
+    columns: 
+      - name: STORAGE_CAPACITY_MT
+        tests:
+          - unique
+          - not_null
+    columns: 
+      - name: DISTRIBUTION_CHANNEL
+        tests:
+          - unique
+          - not_null 
+    columns: 
+      - name: DISTANCE_FROM_REFINERY_KM
+        tests:
+          - unique
+          - not_null  
+  
+
+
+   

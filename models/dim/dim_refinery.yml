@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: dim_refinery
+    description: Refinery Details
+    columns: 
+      - name: REF_ID
+        tests:
+          - unique
+          - not_null
+    columns: 
+      - name: LOCATION_ID
+        tests:
+          - not_null       

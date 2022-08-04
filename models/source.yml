@@ -1,0 +1,30 @@
+version: 2
+sources:
+  - name: DEV_DB
+    schema: LANDING_SCHEMA
+    tables:
+      - name: Ref_Details
+        identifier: REFINERY_DETAIL_DATA
+      - name: Warehouse_Details
+        identifier: WAREHOUSE_DETAIL_DATA
+      - name: Br_Petrol_Pump_Cons_Statewise
+        identifier: BR_PETROL_CONSUMPTION_STATEWISE
+      - name: Crude_Oil_Price
+        identifier: CRUDE_OIL_PRICE  
+      - name: Import_Price_Qty_Yr
+        identifier: IMPORT_PRICE_QUANTITY_OVER_YEAR
+      - name: Oil_Wastage_Details
+        identifier: OIL_WASTAGE_DATA
+      - name: Petrol_Pump_Details
+        identifier: PETROL_PUMP_DATA
+      - name: Ref_To_Warehouse
+        identifier: REFINARY_TO_WAREHOUSE_DATA
+      - name: Ref_Capacity_Utlisation
+        identifier: REFINERY_CAPACITY_UTILISATION_DATA
+      - name: Statewise_Retail_Outlet
+        identifier: STATEWISE_RETAIL_OUTLET
+      - name: Warehouse_Demand_Supply
+        identifier: WAREHOUSE_DEMAND_SUPPLY_DATA
+        
+
+    
