@@ -12,6 +12,7 @@ WITH
         {{ ref('src_oil_wastage_details') }}
 )
 
+
 SELECT oil_wastage_details.REPORT_NUMBER,
     oil_wastage_details.WAREHOUSE_ID,
     oil_wastage_details.ACCIDENT_DATE_TIME,
