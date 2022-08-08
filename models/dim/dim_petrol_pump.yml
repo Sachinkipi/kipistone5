@@ -40,7 +40,3 @@ models:
       - name: GENDER
         tests:
           - not_null 
-          - accepted value:
-             value:
-              - M
-              - F
